@@ -6,5 +6,7 @@ return {
 	},
 	config = function()
 		require("bufferline").setup({})
+		vim.keymap.set("", "<C-Left>", ":bprevious<CR>")
+		vim.keymap.set("", "<C-Right>", ":bnext<CR>")
 	end
 }

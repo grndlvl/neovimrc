@@ -2,10 +2,11 @@ return {
 	{
 		"loctvl842/monokai-pro.nvim",
 		name = "monokai-pro",
-		lazy = true,
+		devicons = true,
 		background_clear = {
 			"bufferline",
 			"lualine",
+			"nvim-tree",
 			"telescope"
 		},
 		config = function()
