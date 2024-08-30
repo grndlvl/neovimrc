@@ -48,10 +48,11 @@ return {
 							}
 					end,
 					["phpactor"] = function()
+						local homedirectory = os.getenv("HOME")
 						require("lspconfig").phpactor.setup({
 							capabilities = capabilities,
 							init_options = {
-								["indexer.stub_paths"] = { "/home/jonathan/.local/share/nvim/phpstorm-stubs/" },
+								["indexer.stub_paths"] = { homedirectory .. "/.local/share/nvim/phpstorm-stubs/" },
 								["indexer.supported_extensions"] = { "php", "inc", "module" },
 								["indexer.include_patterns"] = { "/**/*.php", "/**/*.inc" },
 							}
