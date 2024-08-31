@@ -1,12 +1,12 @@
 return {
   "nvim-lualine/lualine.nvim",
   dependencies = {
+    "loctvl842/monokai-pro.nvim",
     "nvim-tree/nvim-web-devicons",
   },
-  options = {
-    theme = "monokai-pro",
+  opts = {
+    options = {
+      theme = "monokai-pro",
+    },
   },
-  config = function()
-    require("lualine").setup()
-  end,
 }
