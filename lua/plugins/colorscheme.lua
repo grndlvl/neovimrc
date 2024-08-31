@@ -1,7 +1,6 @@
 return {
   "loctvl842/monokai-pro.nvim",
   name = "monokai-pro",
-  devicons = true,
   opts = {
     filter = "classic",
     background_clear = {
