@@ -29,5 +29,3 @@ vim.opt.listchars = {
 
 -- Tab completion
 vim.opt.wildmode = "list:longest,list:full"
-
-vim.cmd.colorscheme("monokai-pro")
