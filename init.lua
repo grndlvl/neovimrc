@@ -9,6 +9,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.visualbell = true
 vim.opt.encoding = "utf-8"
+vim.opt.termguicolors = true
 
 -- Directories for swp files
 vim.opt.backupdir = homedirectory .. "/.vim/backup"
