@@ -4,11 +4,13 @@ require("config.lazy")
 local homedirectory = os.getenv("HOME")
 
 -- Defaults
+vim.opt.encoding = "utf-8"
+
+-- UI elements
 vim.opt.colorcolumn = "80"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.visualbell = true
-vim.opt.encoding = "utf-8"
 vim.opt.termguicolors = true
 
 -- Directories for swp files
