@@ -10,8 +10,8 @@ return {
     {
       mode = { "v", "n" },
       "<leader>m",
-      ":MCstart<CR>",
-      desc = "Create a selection for selected text or word under the cursor",
+      ":MCunderCursor<CR>",
+      desc = "Create a selection for selected character under the cursor",
     },
   },
 }
