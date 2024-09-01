@@ -7,7 +7,7 @@ return {
     "hrsh7th/cmp-cmdline",
     "hrsh7th/nvim-cmp",
     "j-hui/fidget.nvim",
-    "L3MON4D3/LuaSnip",
+    { "L3MON4D3/LuaSnip", build = "make install_jsregexp" },
     "onsails/lspkind.nvim",
     "saadparwaiz1/cmp_luasnip",
     "williamboman/mason.nvim",
@@ -82,7 +82,7 @@ return {
     cmp.setup({
       snippet = {
         expand = function(args)
-          require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
+          require("luasnip").lsp_expand(args.body)
         end,
       },
       mapping = cmp.mapping.preset.insert({
@@ -95,9 +95,9 @@ return {
       }),
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
-        { name = "luasnip" }, -- For luasnip users.
-      }, {
+        { name = "luasnip" },
         { name = "buffer" },
+        { name = "path" },
       }),
       formatting = {
         format = lspkind.cmp_format(),
