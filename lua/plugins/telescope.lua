@@ -8,8 +8,9 @@ return {
     keys = {
       { "<leader>ff", ":Telescope find_files<CR>", desc = "Find files using Telescope" },
       { "<leader>fg", ":Telescope live_grep<CR>", desc = "Grep files using Telescope" },
+      { "<leader>fv", ":Telescope git_files<CR>", desc = "Find Git tracked files in Telescope" },
       { "<leader>fh", ":Telescope help_tags<CR>", desc = "Search help tags using Telescope" },
-      { "<leader>fb", ":Telescope buffers<CR>``", desc = "List buffers in Telescope" },
+      { "<leader>fb", ":Telescope buffers<CR>", desc = "List buffers in Telescope" },
     },
   },
   {
