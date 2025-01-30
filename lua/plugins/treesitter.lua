@@ -2,6 +2,9 @@ return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   config = function()
+    -- Disable default smartindent since we're using treesitters indenting.
+    vim.opt.smartindent = false
+
     require("nvim-treesitter.configs").setup({
       -- A list of parser names, or "all"
       ensure_installed = {
@@ -20,6 +23,7 @@ return {
         "lua",
         "markdown",
         "php",
+        "phpdoc",
         "sql",
         "typescript",
         "vimdoc",
