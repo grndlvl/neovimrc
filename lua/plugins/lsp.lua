@@ -69,6 +69,7 @@ return {
               ["indexer.include_patterns"] = {
                 "/**/*.php",
                 "/**/*.inc",
+                "/**/*.module",
               },
             },
           })
